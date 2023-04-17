@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown Timer App</title>
+    <link rel="stylesheet" type="text/css" href="./styles/main.css">
+    <script src="./scripts/app.js" defer></script>
+</head>
+<body>
+    <section class="main-container">
+        <section id="progress-bar" class="progress"></section>
+
+        <section class="logo">
+            <img src="./images/logo.png">
+        </section>
+
+        <section id="functions" class="functions">
+            <section id="set-time" class="set-time">
+                <input id="tth" name="hr" type="number" placeholder="HH">
+                <label>:</label>
+                <input id="ttm" name="mm" type="number" placeholder="MM">
+                <label>:</label>
+                <input id="tts" name="ss" type="number" placeholder="SS">
+                <!-- <button id="submit-time" class="btn">Submit</button> -->
+                <hr class="hr">
+            </section>
+
+            <section>
+                <!-- <button id="set-time-btn" class="btn">Set Time</button> -->
+                <button id="start-btn" class="btn">Start</button>
+                <button id="pause-btn" class="btn">Pause</button>
+                <button id="stop-btn" class="btn">Stop</button>
+                </section>
+        </section>
+
+        <section class="timer-container">
+            <div id="neg" class="timer">-</div>
+            <section class="hour">
+                <!-- <p class="super">H</p> -->
+                <p id="hr" class="timer">00</p>
+            </section>
+            <div class="divider">:</div>
+            <section class="minutes">
+                <!-- <p class="super">M</p> -->
+                <p id="min" class="timer">00</p>
+            </section>
+            <div class="divider">:</div>
+            <section class="seconds">
+                <!-- <p class="super">S</p> -->
+                <p id="secs" class="timer">00</p>
+            </section>
+        </section>
+        
+        <section id="timeup">
+            <p class="timeup">TIME UP!</p>
+        </section>
+
+    </section> 
+</body>
+</html>
